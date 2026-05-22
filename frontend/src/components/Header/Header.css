@@ -1,0 +1,135 @@
+.header {
+  background-image: url('./header_img.png');
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1.5rem;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.header-text-content {
+  position: absolute;
+  top: 7rem;
+  left: 3rem;
+  color: white;
+  width: 80%;
+  animation: fadeIn 0.5s ease-in-out;
+  /* border: 2px solid red; */
+}
+
+.header-text-content h2 {
+  font-weight: 500;
+  width: 100%;
+}
+
+.header-text-content p {
+  width: 80%;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.view-menu-button {
+  background-color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 9rem;
+  text-decoration: none;
+}
+
+.view-menu-button:hover {
+  transform: scale(1.1);
+}
+
+.header-text-content h2 {
+  width: 70%;
+}
+
+.header-text-content p {
+  width: 70%;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .header {
+    height: 40vh;
+  }
+
+  .header-text-content h2 {
+  }
+
+  .view-menu-button {
+    padding: 0.5rem 1.5rem;
+    top: 4rem;
+  }
+
+  .header-text-content p {
+    width: 80%;
+    font-size: 0.5rem;
+    line-height: 1.5;
+    font-size: 0.7rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .header {
+    height: 25vh;
+  }
+
+  .header-text-content {
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+    color: white;
+    width: 60%;
+  }
+
+  .header-text-content h2 {
+    font-size: 1.5rem;
+    width: 100%;
+
+    /* border: 2px solid red; */
+  }
+
+  .header-text-content p {
+    display: none;
+  }
+
+  .view-menu-button {
+    margin-top: 2px;
+    padding: 0.7rem 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .header {
+    height: 20vh;
+  }
+
+  .header-text-content {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    color: white;
+    width: 60%;
+  }
+
+  .header-text-content p {
+    display: none;
+  }
+
+  .view-menu-button {
+    display: none;
+  }
+}

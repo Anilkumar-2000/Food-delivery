@@ -1,0 +1,6 @@
+.app-container {
+  width: 75%;
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  min-height: 100vh;
+}

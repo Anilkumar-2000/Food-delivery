@@ -1,0 +1,137 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.navbar-logo {
+  height: auto;
+  width: 9rem;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-menu a {
+  /* font-size: 1.1rem; */
+
+  text-decoration: none;
+  outline: none;
+}
+
+.navbar-menu {
+  text-decoration: none;
+  outline: none;
+}
+
+.navbar-menu a:focus,
+.navbar-menu a:focus-visible {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar-search-icon {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-search-icon img {
+  height: auto;
+  width: 1.7rem;
+}
+
+.login-btn {
+  background-color: tomato;
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  width: 9rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.09);
+}
+
+.active-menu {
+  background-color: tomato;
+  padding: 0 1rem;
+  color: white;
+}
+
+.navbar-basket-icons {
+  position: relative;
+}
+
+.dot {
+  background-color: tomato;
+  height: 0.7rem;
+  width: 0.7rem;
+  position: absolute;
+  top: -13px;
+  right: -5px;
+  border-radius: 10px;
+}
+
+.nav-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  z-index: 1;
+  right: 1px;
+  background-color: #fff2ef;
+  padding: 0.8rem;
+  list-style: none;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-profile-dropdown img {
+  width: 20px;
+}
+
+.nav-profile-dropdown li:hover {
+  color: tomato;
+}
+
+.nav-profile:hover .nav-profile-dropdown {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  border: 1px solid tomato;
+  outline: 2px solid white;
+}
+
+@media (max-width: 980px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .login-btn {
+    width: 5rem;
+  }
+
+  .navbar-logo {
+    height: auto;
+    width: 7rem;
+  }
+}
