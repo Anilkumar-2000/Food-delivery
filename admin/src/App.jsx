@@ -10,7 +10,7 @@ import { Toaster, toast } from 'react-hot-toast';
 
 import './App.css';
 const App = () => {
-  const url = 'http://localhost:4000';
+  const url = 'https://food-delivery-backend-t4qy.onrender.com';
 
   return (
     <div>
