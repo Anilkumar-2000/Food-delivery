@@ -5,7 +5,7 @@ import { toast } from 'react-hot-toast';
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = ({ children }) => {
-  const url = 'http://localhost:4000';
+  const url = 'https://food-delivery-backend-t4qy.onrender.com';
   const [cartItems, setCartItems] = useState({});
   const [token, setToken] = useState('' || localStorage.getItem('token'));
   const [food_list, setFoodList] = useState([]);
